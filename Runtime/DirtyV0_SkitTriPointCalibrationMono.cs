@@ -61,6 +61,9 @@ public class DirtyV0_SkitTriPointCalibrationMono : MonoBehaviour
                 Vector3.Distance(m_topBorder, m_rootCenter);
             m_Left2RightPercent = localPosition.x / m_radiusHorizontal;
             m_down2TopPercent = localPosition.y / m_radiusVertical;
+
+//            Debug.DrawLine(m_rootCenter, m_rootCenter +  )
+
         }
 
     }
@@ -74,8 +77,13 @@ public class DirtyV0_SkitTriPointCalibrationMono : MonoBehaviour
     public float m_Left2RightPercent;
     public float m_down2TopPercent;
 
+    public Vector3 m_footLeftLocalPosition;
+    public Vector3 m_footRightLocalPosition;
+    public Vector3 m_headCenterLocalPosition;
 
-
+    public Vector3 m_footLeftLocalRotation;
+    public Vector3 m_footRightLocalRotation;
+    public Vector3 m_headCenterLocalRotation;
 
 
 }
